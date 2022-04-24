@@ -52,15 +52,15 @@ let data = [
         setEntries(newEntries)
 
 
-    const handleDeleteClick = (entryId) => {
-        const newEntries = [...entries]
+    // const handleDeleteClick = (entryId) => {
+    //     const newEntries = [...entries]
 
-        const index = entries.findIndex((entry) => entry.id === entryId)
+    //     const index = entries.findIndex((entry) => entry.id === entryId)
 
-        newEntries.splice(index, 1)
+    //     newEntries.splice(index, 1)
 
-        setEntries(newEntries)
-    }
+    //     setEntries(newEntries)
+    // }
 }
 
     return <div className = "app-container">
@@ -84,7 +84,9 @@ let data = [
                         <td>{entry.balance}</td>
                         <td>{entry.description}</td>
                         <td>
-                            <button type = "button" onClick = {() => handleDeleteClick(entry.id)}>Delete</button>
+                            <button type = "button">Delete</button>
+                            {/* <button type = "button" onClick = {() => handleDeleteClick(entry.id)}>Delete</button> */}
+
                         </td>
                     </tr>
                 ))}
